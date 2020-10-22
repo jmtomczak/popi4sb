@@ -1,29 +1,36 @@
-# POPI: Population-based Optimization for Parameter Identification
-This repository provides code for the following paper:
-- E. Weglarz-Tomczak, Jakub M. Tomczak, Agoston E. Eiben, Stanley Brul, "Population-based Optimization for Kinetic Parameters Identification in Glycolytic Pathway in *Saccharomyces cerevisiae*", 2020 (under review)
+# POPI4SB: Population-based Parameter Identification for Systems Biology
 
-Here, we provide an implementation of five population-based optimizers (differential evolution (DE), (1+1)-evolutionary-strategy (ES), reversible differential evolution (RevDE), the univariate Gaussian estimationg of distribution algorithm (EDA), and RevDE + kNN and EDA + knn, where knn is the K-Nearest-Neighbor surrogate model) for parameter identification of dynamical models. The code is built on top of PySCeS (http://pysces.sourceforge.net/) and could be used for any dynamical model included in JWS Online database (https://jjj.bio.vu.nl/) or defined by a user. The model must be in the `.psc` format.
-
-Here, we focus on the glycolysis in baker's yeast (*Saccharomyces cerevisiae*).
+This repository provides a Python framework for population-based parameter identification of dynamical models in systems biology. The code is built on top of PySCeS (http://pysces.sourceforge.net/) and could be used for any dynamical model included in JWS Online database (https://jjj.bio.vu.nl/) or defined by a user. The model must be in the `.psc` format.
 
 ## Dependencies
+Before you download the code, please be sure to install the following packages:
 - PySCeS (http://pysces.sourceforge.net/)
 - Numpy (https://numpy.org/)
 - SciPy (https://www.scipy.org/)
 - Scikit-Learn (https://scikit-learn.org/)
-
-## Running experiments
-Experiments could by run by executing one of the files `run_experiment_X.py`, where `X` denotes an optimizer (DE, ES, EDA, EDAknn, RevDE, RevDEknn).
-
-In the current code, there are two options (see paper for details):
-- Case 1: The model without a mutation, `wolf1.psc`.
- - Case 2: The model with a mutation, `mutation1.psc`.
  
+
+## Use
+1. Install all necessary packages.
+2. Clone this repository.
+3. Prepare/download your model (.psc).
+4. Prepare a file (.json) with a specification of the model. If you use real data, please prepare the specification accordingly (i.e., the number of points, the beginning and the end of the experiment).
+5. Prepare a file (.json) with a specification of an optimizer.
+6. Update PySCeS solver information if necessary, or use the default setting.
+7. Run `popi4sb.py` and follow the intrustrions.
+
+## Features
+- An integration with PySCeS.
+- Easy-to-use to run simulators (i.e., dynamical models) in systems biology.
+- Parameter identification of dynamical models using either one of the provided optimizers, or own optimizer.
+- A possibily to add new optimizers (see `algorithms/population_optimization_algorithms.py`).
+- An intuitive code structure.
+
  ## Reference
  If you use this code in your research, please cite our paper:
 ```
- @article{glycolysis2020, 
-  title={Population-based Optimization for Kinetic Parameters Identification in Glycolytic Pathway in Saccharomyces cerevisiae}, 
+ @article{popi4sb, 
+  title={POPI4SB: Population-based Parameter Identification for Systems Biology}, 
   author={W{\k{e}}glarz-Tomczak, Ewelina and Tomczak, Jakub M and Eiben, Agoston E and Brul, Stanley}, 
   journal={(under review)}, 
   year={2020}
