@@ -1,0 +1,8 @@
+{
+  "mode_sim_max_iter": 0,
+  "lsoda_atol": 1.0e-012,
+  "lsoda_rtol": 1.0e-007,
+  "lsoda_mxordn": 12,
+  "lsoda_mxords": 5,
+  "lsoda_mxstep": 0
+}
