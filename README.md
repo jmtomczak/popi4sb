@@ -1,4 +1,4 @@
-# POPI4SB: Population-based Parameter Identification for Systems Biology
+# POPI4SB: Population-based Parameter Identification for Dynamical Systems in Biology
 
 This repository provides a Python framework for population-based parameter identification of dynamical models in systems biology. The code is built on top of PySCeS (http://pysces.sourceforge.net/) and could be used for any dynamical model included in JWS Online database (https://jjj.bio.vu.nl/) or defined by a user. The model must be in the `.psc` format.
 
