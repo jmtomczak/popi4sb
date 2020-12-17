@@ -30,8 +30,8 @@ Before you download the code, please be sure to install the following packages:
  If you use this code in your research, please cite our paper:
 ```
  @article{popi4sb, 
-  title={POPI4SB: Population-based Parameter Identification for Systems Biology}, 
-  author={W{\k{e}}glarz-Tomczak, Ewelina and Tomczak, Jakub M and Eiben, Agoston E and Brul, Stanley}, 
+  title={Population-based Parameter Identification for Systems Biology}, 
+  author={Weglarz-Tomczak, Ewelina and Tomczak, Jakub M and Eiben, Agoston E and Brul, Stanley}, 
   journal={(under review)}, 
   year={2020}
 }
