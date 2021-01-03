@@ -32,7 +32,7 @@ Before you download the code, please be sure to install the following packages:
  @article{popi4sb, 
   title={Population-based Parameter Identification forDynamical Models of Biological Networks}, 
   author={Weglarz-Tomczak, Ewelina and Tomczak, Jakub M and Eiben, Agoston E and Brul, Stanley}, 
-  journal={(under review)}, 
-  year={2020}
+  journal={Processes}, 
+  year={2021}
 }
 ```
