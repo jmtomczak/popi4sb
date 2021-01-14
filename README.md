@@ -29,10 +29,14 @@ Before you download the code, please be sure to install the following packages:
  ## Reference
  If you use this code in your research, please cite our paper:
 ```
- @article{popi4sb, 
-  title={Population-based Parameter Identification forDynamical Models of Biological Networks}, 
-  author={Weglarz-Tomczak, Ewelina and Tomczak, Jakub M and Eiben, Agoston E and Brul, Stanley}, 
-  journal={Processes}, 
-  year={2021}
+@article{weglarz2021population,
+  title={Population-Based Parameter Identification for Dynamical Models of Biological Networks with an Application to Saccharomyces cerevisiae},
+  author={Weglarz-Tomczak, Ewelina and Tomczak, Jakub M and Eiben, Agoston E and Brul, Stanley},
+  journal={Processes},
+  volume={9},
+  number={1},
+  pages={98},
+  year={2021},
+  publisher={Multidisciplinary Digital Publishing Institute}
 }
 ```
